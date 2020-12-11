@@ -37,7 +37,7 @@ void helperPreRead(unsigned long int labelIdx, unsigned long int partIdx, int id
     int minimum, i, j;
     for(i = 0; i < idx; i++){
         if(givenCache[partIdx][i].yep == 0){
-            count++;
+            count+= 1;
             givenCache[partIdx][i].duration = count;
 
             memoryReads++;
